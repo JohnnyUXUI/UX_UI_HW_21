@@ -1,0 +1,773 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    color: #000000;
+}
+
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+nav {
+    vertical-align: top;
+    width: 100%;
+    overflow: auto;
+    margin-top: 40px;
+}
+
+nav p {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+nav ul {
+    width: 50%;
+    margin-left: auto;
+    float: right;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 7%;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #003554 !important;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.logo a {
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.logo a:hover {
+    color: #003554;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+header {
+    color: #fff;
+    background-color: #003554;
+    background: url('../images/header-bg.png')
+    no-repeat center center/cover;
+}
+
+header .container {
+    max-width: 1200px;
+    padding: 0 24px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+button {
+    padding: 20px 24px;
+    background: #0582CA;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00A6FB;
+    color: #FFFFFF;
+}
+
+
+.hero-text button {
+    background: #003554;
+    color: #FFFFFF;
+}
+
+.hero-text button:hover {
+    background: #00A6FB;
+    color: #FFFFFF;
+}
+
+header button {
+    margin-right: 16px;
+}
+
+.hero-text {
+    margin: 128px 0;
+}
+
+.hero-text p {   
+    max-width: 900px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+footer {
+    color: #fff;
+    background-color: #051923;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    padding: 32px 24px;
+}
+
+footer p {
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+    float: right;
+    text-align: right;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+footer ul {
+    width: 50%;
+    margin-right: auto;
+    float: left;
+    text-align: left;
+}
+
+footer ul li {
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 7%;
+}
+
+footer ul li a {
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+footer ul li a:hover {
+    color: #00A6FB;
+}
+
+.about {
+    margin: 96px 24px;
+    position: relative;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about img {
+    float: left;
+    width: 25%;
+}
+
+.about .about-text {
+    float: right;
+    width: 70%;
+    margin-left: 5%;
+}
+
+.about-text h2 {
+    margin-bottom: 16px;
+}
+
+.about-text p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.skills {
+    background-color: #F7F7F7;
+    padding: 96px 24px;
+}
+
+.skills .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skills-item {
+    margin: 0 8px;
+    width: 16%;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.portfolio {
+    background-color: #FFF;
+    padding: 96px 24px;
+}
+
+.portfolio .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.portfolio-item {
+    margin: 0 8px;
+    width: 33%;
+    text-align: left;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.portfolio-item p {
+    margin: 4px 0 8px 0;
+}
+
+.portfolio-item a {
+    color: #00A6FB;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    transition: 0.3s;
+}
+
+.portfolio-item a:hover {
+    color: #00A6FB;
+}
+
+.contact {
+    background-color: #003554;
+    padding: 96px 24px;
+}
+
+.contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.contact h2 {
+    color: #fff;
+}
+
+.contact p {
+    color: #fff;
+    max-width: 750px;
+    margin: 16px auto 32px auto;
+}
+
+.bg {
+    position: absolute;
+    width: calc(100vw);
+    height: calc(100vh);
+    z-index: 98;
+    height: 100vh;
+  }
+
+  .bg-colour {
+    background-color: #00A6FB;
+  }
+  
+  .loading-text {
+    position: absolute;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    top: 3%;
+    left: 50%;
+    z-index: 99;
+    height: 100px;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+  }
+
+  .background-overlay {
+      display: none;
+  }
+
+  .show-bg {
+      display: block;
+  }
+
+@media only screen and (max-width: 768px) {
+    .hero-text {
+        margin: 96px 0;
+    }
+
+    .skills-list {
+        display: grid;
+        grid-gap: 16px;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .skills-item {
+        margin: 0;
+        width: 100%;
+    }
+
+    .item1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      .item2 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+      }
+}
+
+@media only screen and (max-width: 699px) {
+    nav {
+        vertical-align: top;
+        width: 100%;
+        overflow: auto;
+        margin-top: 40px;
+    }
+    
+    nav p {
+        width: 100%;
+        display: inline-block;
+        float: none;
+        text-align: left;
+    }
+    
+    nav ul {
+        width: 100%;
+        margin: 0;
+        float: none;
+        text-align: left;
+        margin-top: 32px;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        text-align: center;
+        display: inline-block;
+        margin-right: 6%;
+        margin-left: 0;
+    }
+
+    header button {
+        margin-right: 16px;
+        margin-top: 16px;
+    }
+
+    .hero-text {
+        margin: 64px 0;
+    }    
+    
+    .hero-text p {   
+        max-width: 900px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .about {
+        margin: 64px 24px;
+        position: relative;
+    }
+    
+    .about .container {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        position: relative;
+        display: block;
+    }
+    
+    .about img {
+        float: none;
+        display: block;
+        max-width: 300px;
+        width: 50%;
+        margin-bottom: 32px;
+    }
+    
+    .about .about-text {
+        float: none;
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .about-text h2 {
+        margin-bottom: 16px;
+    }
+    
+    .about-text p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        color: #000000;
+    }
+
+    .skills {
+        padding: 64px 24px;
+    }
+
+    .portfolio {
+        background-color: #FFF;
+        padding: 64px 24px 24px 24px;
+    }
+    
+    .portfolio .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .portfolio h2 {
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    
+    .portfolio-list {
+        display: block;
+
+    }
+    
+    .portfolio-item {
+        margin: 48px 0;
+        width: 100%;
+        text-align: left;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 40px;
+        color: #000000;
+    }
+    
+    .portfolio-item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 8px;
+    }
+    
+    .portfolio-item p {
+        margin: 4px 0 8px 0;
+    }
+    
+    .portfolio-item a {
+        color: #00A6FB;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 32px;
+        transition: 0.3s;
+    }
+
+    .contact {
+        background-color: #003554;
+        padding: 64px 24px;
+    }
+
+    footer p {
+        width: 100%;
+        float: none;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    footer ul {
+        width: 100%;
+        margin: 0;
+        float: none;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 32px;
+    }
+
+    footer ul li {
+        display: inline-block;
+        margin: 0 3%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .about {
+        margin: 64px 24px;
+        position: relative;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .skills {
+        padding: 64px 24px 24px 24px;
+    }
+
+    .portfolio {
+        background-color: #FFF;
+        padding: 64px 24px 24px 24px;
+    }
+
+    .contact {
+        padding: 64px 24px;
+    }
+
+    .about img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    nav p {
+        text-align: center;
+    }
+    
+    nav ul {
+        text-align: center;
+        margin-top: 32px;
+    }
+    
+    nav ul li {
+        text-align: center;
+        margin: 0 3%;
+    }
+
+    .skills-list {
+        display: block;
+    }
+
+    .skills-item {
+        margin: 48px 0;
+        width: 100%;
+    }
+
+    footer p {
+        width: 100%;
+        display: block;
+    }
+    
+    footer ul {
+        display: block;
+        margin-bottom: 32px;
+    }
+
+    footer ul li {
+        display: block;
+        text-align: center;
+        margin: 24px 0;
+    }
+}
+
+/* Sticky Nav for BHS Case Study */
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    z-index: 99;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  #navbar a:hover {
+      color: #00A6FB;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 0px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
